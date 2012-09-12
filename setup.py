@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.4dvl'
+version = '0.1'
 
-setup(name='collective.examples.userdata',
+setup(name='gisweb.anagraficautenti',
       version=version,
-      description="Showcase for the new (Plone 4) plone.app.users IUserDataSchema. Shows how to extend the user data fields that can be selected for the registration form.",
+      description="Aggiunge campi anagrafici per i cittadini italiani. Basato su collective.examples.userdata",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read() + "\n"
                        + open(os.path.join("docs", "TODO.txt")).read(),
@@ -20,7 +20,7 @@ setup(name='collective.examples.userdata',
       url='http://svn.plone.org/svn/collective/collective.examples.userdata',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['collective', 'collective.examples'],
+      namespace_packages=['gisweb',],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
