@@ -27,47 +27,38 @@ class IEnhancedUserDataSchema(IUserDataSchema):
         title=_("Codice fiscale"),
         required=True
         )
-    firstname = schema.TextLine(
-        title=_(u'label_firstname', default=u'First name'),
-        description=_(u'help_firstname',
-                      default=u"Fill in your given name."),
+    nome = schema.TextLine(
+        title=_(u'Nome'),        required=True,
+        )
+    cognome = schema.TextLine(
+        title=_(u'Cognome'),
         required=True,
         )
-    lastname = schema.TextLine(
-        title=_(u'label_lastname', default=u'Last name'),
-        description=_(u'help_lastname',
-                      default=u"Fill in your surname or your family name."),
+    nazione_nascita = schema.TextLine(
+        title=_("Nazione di nascita"),
         required=True,
         )
-    birth_country = schema.TextLine(
-        title=_("nazione di nascita"),
-        required=True,
-        )
-    birth_state = schema.TextLine(
+    provincia_nascita = schema.TextLine(
         title=_("Provincia di nascita"),
         required=True,
         )
-    birth_city = schema.TextLine(
+    comune_nascita = schema.TextLine(
         title=_("Comune di nascita"),
         required=True,
         )
-    gender = schema.Choice(
-        title=_(u'label_gender', default=u'Gender'),
-        description=_(u'help_gender',
-                      default=u"Are you a girl or a boy?"),
+    sesso = schema.Choice(
+        title=_(u'Sesso'),
         values = [
-            _(u'Male'),
-            _(u'Female'),
+            _(u'Maschio'),
+            _(u'Femmina'),
             ],
         required=True,
         )
-    birthdate = schema.Date(
-        title=_(u'label_birthdate', default=u'birthdate'),
-        description=_(u'help_birthdate',
-            default=u'Your date of birth, in the format dd-mm-yyyy'),
+    data_nascita = schema.Date(
+        title=_(u'Data di nascita'),
         required=True,
         )
-    address = schema.TextLine(
+    indirizzo = schema.TextLine(
         title=_("Indirizzo di residenza"),
         required=True,
         )
@@ -83,11 +74,11 @@ class IEnhancedUserDataSchema(IUserDataSchema):
         title=_(u'Provincia di residenza'),
         required=True,
         )
-    country = schema.TextLine(
+    nazione = schema.TextLine(
         title=_(u'Nazione di residenza'),
         required=True,
         )
-    phone = schema.TextLine(
+    telefono = schema.TextLine(
         title=_(u'label_phone', default=u'Telephone number'),
         description=_(u'help_phone',
                       default=u"Leave your phone number so we can reach you."),
@@ -114,11 +105,8 @@ class IEnhancedUserDataSchema(IUserDataSchema):
         required=True,
         )
     accept = schema.Bool(
-        title=_(u'label_accept', default=u'Accept terms of use'),
-        description=_(u'help_accept',
-                      default=u"Tick this box to indicate that you have found,"
-                      " read and accepted the terms of use for this site. "),
+        title=_(u'Accetto'),
+        description=_(u"Autorizzo al trattamento dei dati personali"),
         required=True,
         constraint=validateAccept,
         )
-
