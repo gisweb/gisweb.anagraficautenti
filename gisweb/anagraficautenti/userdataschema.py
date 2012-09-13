@@ -79,9 +79,7 @@ class IEnhancedUserDataSchema(IUserDataSchema):
         required=True,
         )
     telefono = schema.TextLine(
-        title=_(u'label_phone', default=u'Telephone number'),
-        description=_(u'help_phone',
-                      default=u"Leave your phone number so we can reach you."),
+        title=_(u'label_phone', default=u'Numero di telefono'),
         required=False,
         )
     tipo_documento = schema.Choice(
