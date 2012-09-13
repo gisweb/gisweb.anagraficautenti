@@ -1,90 +1,90 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: collective.examples.userdata\n"
+"Project-Id-Version: gisweb.anagraficautenti\n"
 "POT-Creation-Date: 2010-02-09 13:42+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: Kees Hink <hink@gw20e.com>\n"
-"Language-Team: Dutch <plone-nl@lists.plone.org>\n"
+"PO-Revision-Date: 2012-09-13 11:54+0100\n"
+"Last-Translator: Silvio Tomatis <silviot@gmail.com>\n"
+"Language-Team: German <plone-de@lists.plone.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "Language-Code: nl\n"
-"Language-Name: Nederlands\n"
+"Language-Name: Germany\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.examples.userdata\n"
-"X-Is-Fallback-For: nl-nl nl-be\n"
+"Domain: gisweb.anagraficautenti\n"
+"X-Is-Fallback-For: de-de de-at de-ch\n"
 
 #: userdataschema.py:46
 msgid "Female"
-msgstr "Vrouwelijk"
+msgstr "Femmina"
 
 #: userdataschema.py:45
 msgid "Male"
-msgstr "Mannelijk"
+msgstr "Maschio"
 
 #: userdataschema.py:45
 msgid "gender_female"
-msgstr "Vrouwelijk"
+msgstr "Femmina"
 
 #: userdataschema.py:44
 msgid "gender_male"
-msgstr "Mannelijk"
+msgstr "Maschio"
 
 #: userdataschema.py:76
 msgid "help_accept"
-msgstr "Kruis dit veld aan om aan te geven dat u de voorwaarden voor het gebruik van deze site hebt gevonden en gelezen, en dat u deze aanvaardt."
+msgstr "Autorizzo al trattamento dei miei dati personali"
 
 #: userdataschema.py:51
 msgid "help_birthdate"
-msgstr "Uw geboortedatum, in het formaat dd-mm-jjjj."
+msgstr "Data di nascita in formato gg-mm-aaaa"
 
 #: userdataschema.py:57
 msgid "help_city"
-msgstr "Vul uw woonplaats in."
+msgstr "Città di residenza"
 
 #: userdataschema.py:35
 msgid "help_country"
-msgstr "Vul in in welk land u woont."
+msgstr "Das Land in dem Sie leben"
 
 #: userdataschema.py:23
 msgid "help_firstname"
-msgstr "Uw voornaam of eigennaam."
+msgstr "Ihr Vorname."
 
 #: userdataschema.py:41
 msgid "help_gender"
-msgstr "Vul uw geslacht in."
+msgstr "Ihr Geschlecht."
 
 #: userdataschema.py:29
 msgid "help_lastname"
-msgstr "Uw achternaam of familienaam."
+msgstr "Ihr Nachname."
 
 #: userdataschema.py:69
 msgid "help_newsletter"
-msgstr "Als u dit veld aankruist zullen we u op de nieuwsbrief van deze site abonneren."
+msgstr "Kreuzen Sie dieses Feld an, wenn sie den Newsletter beziehen möchten."
 
 #: userdataschema.py:63
 msgid "help_phone"
-msgstr "Laat uw telefoonnumer achter, zodat we u kunnen bereiken."
+msgstr "Ihre Telefonnummer"
 
 #: userdataschema.py:75
 msgid "label_accept"
-msgstr "Aanvaarden gebruiksvoorwaarden"
+msgstr "Ich habe die Nutzungsregeln gelesen haben und aktzeptiert."
 
 #: userdataschema.py:50
 msgid "label_birthdate"
-msgstr "Geboortedatum"
+msgstr "Geburtsdatum"
 
 #: userdataschema.py:56
 msgid "label_city"
-msgstr "Woonplaats"
+msgstr "Wohnort"
 
 #: userdataschema.py:34
 msgid "label_country"
 msgstr "Land"
 
 # Duplicate from Plone translations, so we can use
-# collective.examples.userdata to translate all fields, incliding those from
+# gisweb.anagraficautenti to translate all fields, incliding those from
 # Plone. This is admittedly a workaround.
 #. Default: "E-mail"
 msgid "label_email"
@@ -92,25 +92,25 @@ msgstr "E-mail"
 
 #: userdataschema.py:22
 msgid "label_firstname"
-msgstr "Voornaam"
+msgstr "Vorname"
 
 #: userdataschema.py:40
 msgid "label_gender"
-msgstr "Geslacht"
+msgstr "Geschlecht"
 
 #: userdataschema.py:28
 msgid "label_lastname"
-msgstr "Achternaam"
+msgstr "Nachname"
 
 #: userdataschema.py:68
 msgid "label_newsletter"
-msgstr "Abonneren op nieuwsbrief"
+msgstr "Newsletter abonnieren"
 
 #: userdataschema.py:62
 msgid "label_phone"
-msgstr "Telefoonnummer"
+msgstr "Telefonnummer"
 
 #: userdataschema.py:44
 msgid "unknown"
-msgstr "onbekend"
+msgstr "unbekannt"
 

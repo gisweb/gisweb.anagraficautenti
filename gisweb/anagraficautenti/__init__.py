@@ -1,5 +1,5 @@
 from zope.i18nmessageid import MessageFactory
-_ = MessageFactory("collective.examples.userdata")
+_ = MessageFactory("gisweb.anagraficautenti")
 
 def initialize(context):
     """Initializer called when used as a Zope 2 product."""
