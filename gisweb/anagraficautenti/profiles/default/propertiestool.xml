@@ -3,25 +3,25 @@
  <object name="site_properties" meta_type="Plone Property Sheet">
   <!-- Fields that will be on the form after installation of the product -->
   <property name="user_registration_fields" type="lines">
-    <element value="provincia" />
-    <element value="comune_nascita" />
-    <element value="n_documento" />
     <element value="codicefiscale" />
-    <element value="provincia_nascita" />
-    <element value="cap" />
-    <element value="sesso" />
     <element value="cognome" />
     <element value="nome" />
-    <element value="indirizzo" />
-    <element value="rilasciato_da" />
-    <element value="comune" />
     <element value="data_nascita" />
-    <element value="rilasciato_il" />
-    <element value="telefono" />
     <element value="nazione_nascita" />
-    <element value="accept" />
-    <element value="tipo_documento" />
+    <element value="provincia_nascita" />
+    <element value="comune_nascita" />
+    <element value="sesso" />
+    <element value="indirizzo" />
+    <element value="cap" />
+    <element value="comune" />
+    <element value="provincia" />
     <element value="nazione" />
+    <element value="telefono" />
+    <element value="tipo_documento" />
+    <element value="n_documento" />
+    <element value="rilasciato_da" />
+    <element value="rilasciato_il" />
+    <element value="accept" />
   </property>
  </object>
 </object>
