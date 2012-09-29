@@ -98,7 +98,7 @@ class IEnhancedUserDataSchema(IUserDataSchema):
         required=True,
         )
     rilasciato_il = schema.Date(
-        title=u'Rilasciato da',
+        title=u'Rilasciato il',
         required=True,
         )
     accept = schema.Bool(
