@@ -2,7 +2,6 @@
 from zope.interface import Interface, implements
 from zope import schema
 
-from gisweb.anagraficautenti import _
 from plone.app.users.userdataschema import IUserDataSchemaProvider
 from plone.app.users.userdataschema import IUserDataSchema
 
@@ -24,89 +23,87 @@ class IEnhancedUserDataSchema(IUserDataSchema):
     extra fields.
     """
     codicefiscale = schema.TextLine(
-        title=_("Codice fiscale"),
+        title="Codice fiscale",
         required=True
         )
     nome = schema.TextLine(
-        title=_(u'Nome'),        required=True,
+        title=u'Nome',        required=True,
         )
     cognome = schema.TextLine(
-        title=_(u'Cognome'),
+        title=u'Cognome',
         required=True,
         )
     nazione_nascita = schema.TextLine(
-        title=_("Nazione di nascita"),
+        title="Nazione di nascita",
         required=True,
         )
     provincia_nascita = schema.TextLine(
-        title=_("Provincia di nascita"),
+        title="Provincia di nascita",
         required=True,
         )
     comune_nascita = schema.TextLine(
-        title=_("Comune di nascita"),
+        title="Comune di nascita",
         required=True,
         )
     sesso = schema.Choice(
-        title=_(u'Sesso'),
+        title=u'Sesso',
         values = [
-            _(u'Maschio'),
-            _(u'Femmina'),
+            u'Maschio',
+            u'Femmina',
             ],
         required=True,
         )
     data_nascita = schema.Date(
-        title=_(u'Data di nascita'),
+        title=u'Data di nascita',
         required=True,
         )
     indirizzo = schema.TextLine(
-        title=_("Indirizzo di residenza"),
+        title="Indirizzo di residenza",
         required=True,
         )
     cap = schema.TextLine(
-        title=_("CAP"),
+        title="CAP",
         required=True,
         )
     comune = schema.TextLine(
-        title=_(u'label_city', default=u'Comune di residenza'),
+        title=u'Comune di residenza',
         required=True,
         )
     provincia = schema.TextLine(
-        title=_(u'Provincia di residenza'),
+        title=u'Provincia di residenza',
         required=True,
         )
     nazione = schema.TextLine(
-        title=_(u'Nazione di residenza'),
+        title=u'Nazione di residenza',
         required=True,
         )
     telefono = schema.TextLine(
-        title=_(u'label_phone', default=u'Telephone number'),
-        description=_(u'help_phone',
-                      default=u"Leave your phone number so we can reach you."),
+        title='Numero di telefono',
         required=False,
         )
     tipo_documento = schema.Choice(
-        title=_(u'Tipo di documento'),
+        title=u'Tipo di documento',
         values = [
-            _(u'Passaporto'),
-            _(u"Carta d'identita"), # XXX Put accent in transaltion
+            u'Passaporto',
+            u"Carta d'identita", # XXX Put accent in transaltion
             ],
         required=True,
         )
     n_documento = schema.TextLine(
-        title=_(u'Numero documento'),
+        title=u'Numero documento',
         required=True,
         )
     rilasciato_da = schema.TextLine(
-        title=_(u'Rilasciato da'),
+        title=u'Rilasciato da',
         required=True,
         )
     rilasciato_il = schema.Date(
-        title=_(u'Rilasciato da'),
+        title=u'Rilasciato da',
         required=True,
         )
     accept = schema.Bool(
-        title=_(u'Accetto'),
-        description=_(u"Autorizzo al trattamento dei dati personali"),
+        title=u'Accetto',
+        description=u"Autorizzo al trattamento dei dati personali",
         required=True,
         constraint=validateAccept,
         )
