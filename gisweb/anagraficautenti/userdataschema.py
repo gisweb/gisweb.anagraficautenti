@@ -23,7 +23,7 @@ class IEnhancedUserDataSchema(IUserDataSchema):
     extra fields.
     """
     codicefiscale = schema.TextLine(
-        title="Codice fiscale",
+        title=u"Codice fiscale",
         required=True
         )
     nome = schema.TextLine(
@@ -34,15 +34,15 @@ class IEnhancedUserDataSchema(IUserDataSchema):
         required=True,
         )
     nazione_nascita = schema.TextLine(
-        title="Nazione di nascita",
+        title=u"Nazione di nascita",
         required=True,
         )
     provincia_nascita = schema.TextLine(
-        title="Provincia di nascita",
+        title=u"Provincia di nascita",
         required=True,
         )
     comune_nascita = schema.TextLine(
-        title="Comune di nascita",
+        title=u"Comune di nascita",
         required=True,
         )
     sesso = schema.Choice(
@@ -58,11 +58,11 @@ class IEnhancedUserDataSchema(IUserDataSchema):
         required=True,
         )
     indirizzo = schema.TextLine(
-        title="Indirizzo di residenza",
+        title=u"Indirizzo di residenza",
         required=True,
         )
     cap = schema.TextLine(
-        title="CAP",
+        title=u"CAP",
         required=True,
         )
     comune = schema.TextLine(
@@ -78,7 +78,7 @@ class IEnhancedUserDataSchema(IUserDataSchema):
         required=True,
         )
     telefono = schema.TextLine(
-        title='Numero di telefono',
+        title=u'Numero di telefono',
         required=False,
         )
     tipo_documento = schema.Choice(
