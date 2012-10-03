@@ -28,6 +28,11 @@ setup(name='gisweb.anagraficautenti',
           'plone.app.users >= 1.0b7',
           # -*- Extra requirements: -*-
       ],
+      extras_require = {
+          'test': [
+                  'plone.app.testing',
+              ]
+      },
       entry_points="""
       # -*- Entry points: -*-
 

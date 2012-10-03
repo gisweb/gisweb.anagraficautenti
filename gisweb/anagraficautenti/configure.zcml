@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="gisweb.anagraficautenti">
 
   <five:registerPackage package="." initialize=".initialize" />
@@ -13,5 +14,19 @@
       description='Campi aggiuntivi per la registrazione utenti.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+  <adapter
+    provides=".userdataschema.IEnhancedUserDataSchema"
+    for="Products.CMFCore.interfaces.ISiteRoot"
+    factory=".adapter.EnhancedUserDataPanelAdapter"
+    />
+
+  <browser:page
+    for="Products.CMFPlone.Portal.PloneSite"
+    name="personal-information"
+    class=".userdatapanel.CustomizedUserDataPanel"
+    permission="cmf.SetOwnProperties"
+    />
+
 
 </configure>

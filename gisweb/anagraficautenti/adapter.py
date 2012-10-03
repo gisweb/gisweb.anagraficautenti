@@ -1,4 +1,6 @@
 from plone.app.users.browser.personalpreferences import UserDataPanelAdapter
+from datetime import date
+from userdataschema import IEnhancedUserDataSchema
 
 
 fieldnames = ['codicefiscale', 'cognome', 'nome', 'data_nascita',
@@ -8,9 +10,13 @@ fieldnames = ['codicefiscale', 'cognome', 'nome', 'data_nascita',
               'rilasciato_il']
 
 def mkprop(fieldname):
+    field = IEnhancedUserDataSchema[fieldname]
     def getter(self):
-        return self.context.getProperty(fieldname, '')
+        value = self.context.getProperty(fieldname, '')
+        return unicode(value, 'utf8')
     def setter(self, value):
+        if isinstance(value, date):
+            value = value.strftime("%Y-%m-%d")
         return self.context.setMemberProperties({fieldname : value})
     return property(getter, setter)
 
@@ -20,3 +26,4 @@ class EnhancedUserDataPanelAdapter(UserDataPanelAdapter):
     """
     for fieldname in fieldnames:
         locals()[fieldname] = mkprop(fieldname)
+    accept = mkprop('accept')
